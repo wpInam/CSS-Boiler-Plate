@@ -1,0 +1,21 @@
+:root{
+    --color--primary:#000;
+    --color-secondary:#000;
+    --color-constant:#000;
+    --default-margin:40px 0;
+}
+
+*{margin: 0px;padding: 0px; box-sizing:border-box;}
+
+/** 
+* body{}
+* h1,h2,h3,h4,h5,h6,p{} 
+*/
+
+
+/* Deault Height and Width Of Containers */
+.default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; }
+.default-container-size{width: 57.81%; }
+    @media screen and (max-width:1366px) {.default-container-size{width: 90%;}}
+    @media screen and (max-width:425px) {.default-container-size{width: 97%;}}
+/* End Deault Height and Width Of Containers */
