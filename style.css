@@ -1,5 +1,13 @@
+/**
+* Google Fonts 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
 :root{
-    --font-style:"Roboto";
+    --font-family:'Poppins', sans-serif;
     --default-container-size:57.81%; --default-container-size-1366px:90%; --default-container-size-425px:97%;
     --default-margin:40px 0;
 
@@ -10,7 +18,7 @@
 
 }
 
-*{margin: 0px;padding: 0px; box-sizing:border-box; font-style: var(--font-style);}
+*{margin: 0px;padding: 0px; box-sizing:border-box; font-family:var(--font-family);}
 a{color:var(--a-color);}
 button{color: var(--color-btn);}
 /** 
