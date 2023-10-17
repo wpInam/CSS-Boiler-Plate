@@ -1,0 +1,35 @@
+/**
+* Google Fonts 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
+:root{
+    --font-family:'Poppins', sans-serif;
+    --default-container-size:57.81%; --default-container-size-1366px:90%; --default-container-size-425px:97%;
+    --default-margin:40px 0;
+
+    --a-color:#000; --color-btn:#000;
+    --color--primary:#000;
+    --color-secondary:#000;
+    --color-constant:#000;
+
+}
+
+*{margin: 0px;padding: 0px; box-sizing:border-box; font-family:var(--font-family);}
+a{color:var(--a-color);}
+button{color: var(--color-btn);}
+/** 
+* body{}
+* h1,h2,h3,h4,h5,h6,p{} 
+*/
+
+
+/* Deault Height and Width Of Containers */
+.default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; }
+.default-container-size{width: var(--default-container-size); }
+    @media screen and (max-width:1366px) {.default-container-size{width: var(--default-container-size-1366px);}}
+    @media screen and (max-width:425px) {.default-container-size{width: var(--default-container-size-425px);}}
+/* End Deault Height and Width Of Containers */
