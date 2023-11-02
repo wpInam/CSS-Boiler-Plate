@@ -18,6 +18,7 @@
     --color-constant-b:#000;
     --color-yellow:#FCEB04;
 }
+body{overflow-x: hidden; background-color: var(--color-body-bg);}
 *{margin: 0px;padding: 0px; box-sizing:border-box; font-family:var(--font-family);}
 a{    
     font-size: 16px;
@@ -30,10 +31,11 @@ a{
     gap: 10px;
 }
 button{color: var(--color-btn);}
-body{overflow-x: hidden; background-color: var(--color-body-bg);}
 h1,h2,h3,h4,h5,h6,p{ color: var(--color-constant-w);} 
+p{font-size: 16px;}
 
 /* Deault Height and Width Of Containers */
+.default-overlay{position: absolute;height: 100%;width: 100%;}
 .default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; position:relative;}
 .default-container-size{width: var(--default-container-size); }
     @media screen and (max-width:1366px) {.default-container-size{width: var(--default-container-size-1366px);}}
