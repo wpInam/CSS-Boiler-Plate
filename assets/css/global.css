@@ -28,8 +28,11 @@ a{
     display: flex; justify-content: flex-end; align-items: center; gap: 10px;
 }
 button{color: var(--color-btn);}
+
 h1,h2,h3,h4,h5,h6,p{ color: var(--color-constant-w);} 
-p{font-size: 16px;}
+
+h3{font-size: clamp(30px, 5vw, 88px);}
+p{font-size: clamp(14px, 2vw, 16px);}
 
 /* Deault Height and Width Of Containers */
 .default-overlay{position: absolute;height: 100%;width: 100%;background-color: rgba(0, 0,0,0.5);z-index: 1;}
@@ -40,3 +43,4 @@ p{font-size: 16px;}
     @media screen and (max-width:550px){.default-container-size{flex-wrap: wrap;}}
     @media screen and (max-width:425px) {.default-container-size{width: var(--default-container-size-425px);}}
 /* End Deault Height and Width Of Containers */
+

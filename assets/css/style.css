@@ -9,8 +9,6 @@
 
 
 
-
-
 /*^
 * Media Queries Break Points
 */
@@ -22,3 +20,13 @@
 @media screen and (max-width:550px){}
 @media screen and (max-width:425px){}
 @media screen and (max-width:375px){}
+/* 
+* Some Usefull Very Usefull Properties For Responsive
+* calc()
+* min(): min(50%, 500px) => min(50%, max(50%, 500px))
+* max(): max(50%, 500px) => max(50%, min(50%, 500px))
+* clamp(): clamp(minValue, preferValues-ValueRotateBetweenThese, maxValue)
+* abs(): Always Give positive number
+* 
+* e.g: font-size: clamp(minValue, preferValue, maxValue) => h1{font-size: clamp(25px, 5vw, 88px)}
+*/
