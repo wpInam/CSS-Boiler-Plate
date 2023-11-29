@@ -3,9 +3,8 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 :root{
-    /* font-family: Red Hat Display; */
     --font-family:'Poppins', sans-serif;
-    --default-container-size:83.33%; --default-container-size-1366px:90%; --default-container-size-425px:95%;
+    --default-container-size:min(1280px,90vw);
     --default-margin:0 0 60px 0;
 
     --a-color:#282627; --a-bgcolor: #FCEB04;  --color-btn:#000;
@@ -18,19 +17,29 @@
     --color-constant-b:#000;
     --color-yellow:#FCEB04;
 }
+html{
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 30vh; */
+}
 body{overflow-x: hidden; background-color: var(--color-body-bg);}
-*{margin: 0px;padding: 0px; box-sizing:border-box; font-family:var(--font-family);}
+*{margin: 0px;padding: 0px; box-sizing:border-box; font-family:var(--font-family);  -webkit-appearance: none;-moz-appearance: none; appearance: none;
+ -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+         transition: all 0.4s;
+    
+    }
 a{   
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-style: normal;
     letter-spacing: -0.24px;
     color:var(--a-color); text-decoration-line:var(--text-d-line);
     display: flex; justify-content: flex-end; align-items: center; gap: 10px;
 }
+
 button{color: var(--color-btn);}
-
+img:hover{transform: scale(1.05);}
 h1,h2,h3,h4,h5,h6,p{ color: var(--color-constant-w);} 
-
 h3{font-size: clamp(30px, 5vw, 88px);}
 p{font-size: clamp(14px, 2vw, 16px);}
 
@@ -39,8 +48,19 @@ p{font-size: clamp(14px, 2vw, 16px);}
 .default-popup{ display: none;position: fixed;top: 0; min-height: 100vh;width: 100vw; }
 .default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; position:relative;}
 .default-container-size{width: var(--default-container-size); }
-    @media screen and (max-width:1366px) {.default-container-size{width: var(--default-container-size-1366px);}}
-    @media screen and (max-width:550px){.default-container-size{flex-wrap: wrap;}}
-    @media screen and (max-width:425px) {.default-container-size{width: var(--default-container-size-425px);}}
+    @media screen and (max-width:550px){.default-container-size{flex-wrap: wrap;} 
+    /**/
+    .default-text-center{text-align: justify; text-align-last: center}}
+    /**/
 /* End Deault Height and Width Of Containers */
 
+
+/* Some Hacks */
+
+/* 1. If You want to remove autofill colors on all input filleds */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: all 5000s ease-in-out 0s;
+}

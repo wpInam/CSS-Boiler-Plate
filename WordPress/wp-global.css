@@ -1,0 +1,22 @@
+:root{
+    --default-container-size:min(1280px, 83.33%); 
+    --default-margin:0 0 60px 0;
+}
+body{overflow-x: hidden;}
+*{margin: 0px;padding: 0px; box-sizing:border-box;}
+a{   
+    font-size: clamp(14px, 2vw, 16px);
+    font-style: normal;
+}
+/* h3{font-size: clamp(30px, 5vw, 88px);} */
+p{font-size: clamp(14px, 2vw, 16px);}
+
+/* Deault Height and Width Of Containers */
+.default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; padding: 0px;}
+.default-container-size{width: var(--default-container-size);padding: 0px;}
+/* End Deault Height and Width Of Containers */
+
+/**/
+@media screen and (max-width:550px){ 
+    .default-text-center{text-align: justify; text-align-last: center}}
+/**/
