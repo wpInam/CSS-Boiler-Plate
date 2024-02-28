@@ -1,6 +1,6 @@
 /** 
 * All the general styles goes here
-* Modred Styles
+* Modren Styles
 * 
 */
 
@@ -10,10 +10,11 @@ h3.default-text-center:hover{font-size: 70px;}
 .modren-buttons{width: 100%; background-color: rgb(39, 44, 49);display: flex; justify-content:space-between; width:100%;align-items: center;}
 
 /* For Button 1 */
+a{ display: flex; justify-content: flex-end; align-items: center; gap: 10px;}
 span.button-with-angle{ max-width: 150px;padding-left: 20px;overflow: hidden;border-radius: 7px;}
 span.button-with-angle:hover{transform: scale(1.05);}
 
-a.anchar-tag{background-color: tan;width: max-content; padding: 10px 40px 10px 20px;transform: skewX(-35deg);border-radius: 7px;}
+a.anchar-tag{background-color: aliceblue; width: max-content; padding: 10px 40px 10px 20px;transform: skewX(-35deg);border-radius: 7px;}
 a.anchar-tag span{transform: skewX(35deg);}
 
 /* For Button 1 */
@@ -39,7 +40,8 @@ a.anchar-tag-2 span{transform: skewX(-35deg);width: 80%;}
 @media screen and (max-width:375px){}
 /* 
 * Some Usefull Very Usefull Properties For Responsive
-^ 
+* https://replit.com/
+*
 * Nesting => nav{ & ul{ & li{} } }
 * aspect-ratio:width/height; aspect-ratio:1/2; aspect-ratio:2/1;
 * calc()

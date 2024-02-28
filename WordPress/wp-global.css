@@ -1,5 +1,5 @@
 :root{
-    --default-container-size:min(1280px, 83.33%); 
+    --default-container-size:min(14490px, 90vw); 
     --default-margin:0 0 60px 0;
 }
 body{overflow-x: hidden;}
@@ -12,7 +12,7 @@ a{
 p{font-size: clamp(14px, 2vw, 16px);}
 
 /* Deault Height and Width Of Containers */
-.default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; padding: 0px;}
+.default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%!important; padding: 0px;}
 .default-container-size{width: var(--default-container-size);padding: 0px;}
 /* End Deault Height and Width Of Containers */
 
@@ -20,3 +20,16 @@ p{font-size: clamp(14px, 2vw, 16px);}
 @media screen and (max-width:550px){ 
     .default-text-center{text-align: justify; text-align-last: center}}
 /**/
+
+/* Some Hacks  */
+a:focus {
+    outline: unset;
+    outline-color: unset;
+    outline-style: unset;
+    outline-width: unset;
+    outline: unset!important;
+    outline-color: unset!important;
+    outline-style: unset!important;
+    outline-width: unset!important;
+    outline-offset: unset!important;
+}
