@@ -19,7 +19,7 @@
     --sportive-clr2:#374151;/* Light */
 
     /* Default Sizes */
-    --contain:min(1280px,90vw);
+    --container:min(1280px,90vw);
     --default-inner-container:min(800px, 90vw);
 
     --h1-size: clamp(25px, 3.5vw, 44px);
@@ -74,10 +74,10 @@ button{color: var(--color-btn);}
 
 /* Default Main Container Classes */
 .w-100{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; position:relative;}
-.contain{width: var(--contain); margin: auto;}
+.container{width: var(--container); margin: auto;}
 
 @media screen and (max-width:550px){
-    .contain{flex-wrap: wrap;} .default-text-center{text-align: justify; text-align-last: center}
+    .container{flex-wrap: wrap;} .default-text-center{text-align: justify; text-align-last: center}
 }
 
 /* End Default Main Container Classes */
