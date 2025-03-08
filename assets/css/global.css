@@ -73,7 +73,7 @@ button{color: var(--color-btn);}
 .default-popup{ display: none;position: fixed;top: 0; min-height: 100vh;width: 100vw; }
 
 /* Default Main Container Classes */
-.default-main-container{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; position:relative;}
+.w-100{ margin:var(--default-margin); display: flex; justify-content:center; align-items:center;  width:100%; position:relative;}
 .default-container-size{width: var(--default-container-size); margin: auto;}
 
 @media screen and (max-width:550px){
